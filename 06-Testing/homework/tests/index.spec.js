@@ -16,7 +16,7 @@ describe('Test de APIS', () => {
     it('responds with 200', () => agent.get('/test').expect(200));
     it('responds with and object with message `test`', () =>
       agent.get('/test').then((res) => {
-        expect(res.body.message).toEqual('hola');
+        expect(res.body.message).toEqual('test');
       }));
   });
 
